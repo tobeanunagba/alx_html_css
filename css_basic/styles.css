@@ -1,35 +1,79 @@
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Ensure it takes up the full viewport */
-    overflow-y: scroll;
-  }
-  
-  header, footer {
-    background-color: #ccc; /* Example styling */
-    padding: 10px;
-    text-align: center;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-  }
-  
-  article {
-    flex: 2;
-    background-color: #f0f0f0; /* Example styling */
-    padding: 10px;
-  }
-  
-  aside {
-    flex: 1;
-    background-color: #e0e0e0; /* Example styling */
-    padding: 10px;
-  }
-  
-  footer {
-    background-color: #ccc;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header, footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin: 20px;
+}
+
+article {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+aside {
+  background-color: #e9ecef;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+header, footer {
+  border-bottom: 5px solid #007bff; /* Adding borders for header and footer */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadows */
+}
+
+main {
+  border-radius: 10px; /* Rounded corners for the main content */
+}
+
+aside {
+  border-left: 3px solid #007bff;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.content-section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.6;
+}
