@@ -4,6 +4,11 @@ body {
   color: #333;
 }
 
+@media (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+}
+
+
 header, footer {
   background-color: #343a40;
   color: white;
