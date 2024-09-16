@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure it takes up the full viewport */
+    overflow-y: scroll;
+  }
+  
+  header, footer {
+    background-color: #ccc; /* Example styling */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  
+  article {
+    flex: 2;
+    background-color: #f0f0f0; /* Example styling */
+    padding: 10px;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: #e0e0e0; /* Example styling */
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #ccc;
+  }
+  
