@@ -1,0 +1,419 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    height: 100vh;
+    background-image: url('./images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff4b4b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #ff7979;
+    transition: background-color 0.3s ease;
+}
+
+#what-we-do {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #what-we-do h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  #what-we-do p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+   color: black;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  
+  
+  .service-block i {
+    font-size: 50px;
+    color:#ff7979; /* Customize based on the design */
+  }
+  
+  .service-block h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: black;
+  }
+  
+  .service-block p {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-block {
+      width: 100%;
+    }
+  }
+  
+  .our-results-section {
+    padding: 60px 20px;
+    background-image: url(./images/headphones_hero_2.jpg);
+    text-align: center;
+  }
+  
+  .our-results-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .our-results-section p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .results-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .result-block {
+    background:#ff5b5b ;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 22%; /* Adjust the width as needed */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .result-block:hover {
+    transform: translateY(-10px);
+  }
+  
+  .result-block i {
+    font-size: 3rem; /* Size of the custom icon */
+    color: #ff5b5b; /* Change to match your theme */
+  }
+  
+  .result-block h3 {
+    margin: 15px 0 10px;
+    font-size: 2rem; /* Larger text for metrics */
+    color: white;
+  }
+  
+  .result-block p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .result-block {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #ff5b5b;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .submit-btn {
+    background-color: #ff5b5b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ff3838;
+  }
+  
+  .submit-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Add smooth animation for form focus */
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #ff5b5b;
+  }
+  
+  .form-group input:invalid:focus,
+  .form-group textarea:invalid:focus {
+    border-color: #f00;
+  }
+  
+  .footer-section {
+    background-color: #111; /* Dark background */
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .footer-logo-img {
+    max-width: 150px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-socials a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #ff5b5b;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ff5b5b;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-logo,
+    .footer-socials,
+    .footer-links {
+      margin-bottom: 20px;
+    }
+  }
+
+  .what-we-do {
+    background-color: #F7F7F7;
+    padding: 120px 0; /* increased padding to 120px */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .what-we-do-section {
+    text-align: center;
+    padding: 60px; /* added padding to the section */
+  }
+  
+  .what-we-do-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px; /* decreased margin to 20px */
+    color: #ff5b5b;
+  }
+  
+  .what-we-do-section p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 40px; /* decreased margin to 40px */
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -20px; /* added negative margin to the services container */
+  }
+  
+  .service-item {
+    flex-basis: 25%;
+    margin: 20px; /* decreased margin to 20px */
+    text-align: center;
+    padding: 20px; /* decreased padding to 20px */
+    border: 1px solid #ddd; /* added border to the service item */
+    border-radius: 10px; /* added border radius to the service item */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow to the service item */
+  }
+  
+  .service-item i {
+    font-size: 40px;
+    color: #ff5b5b;
+    margin-bottom: 20px; /* decreased margin to 20px */
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #666666;
+  }
