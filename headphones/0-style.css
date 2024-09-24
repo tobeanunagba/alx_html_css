@@ -83,55 +83,6 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-#what-we-do {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  #what-we-do h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: black;
-  }
-  
-  #what-we-do p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-   color: black;
-  }
-  
-  .services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-  }
-  
-  
-  
-  .service-block i {
-    font-size: 50px;
-    color:#ff7979; /* Customize based on the design */
-  }
-  
-  .service-block h3 {
-    font-size: 1.5rem;
-    margin: 20px 0 10px;
-    color: black;
-  }
-  
-  .service-block p {
-    font-size: 1rem;
-    color: black;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .service-block {
-      width: 100%;
-    }
-  }
   
   .our-results-section {
     padding: 60px 20px;
@@ -204,6 +155,7 @@ nav {
   .contact-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: black;
   }
   
   .contact-section p {
@@ -226,6 +178,7 @@ nav {
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
+    color: black;
   }
   
   .form-group input,
@@ -355,65 +308,85 @@ nav {
     }
   }
 
-  .what-we-do {
-    background-color: #F7F7F7;
-    padding: 120px 0; /* increased padding to 120px */
+/* General Section Styling */
+#what-we-do {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background for the section */
+  text-align: center;
+}
+
+#what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#what-we-do p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Features container styling */
+.features {
+  display: flex;
+  justify-content: space-between; /* Spread items out evenly */
+  gap: 20px; /* Space between feature items */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  padding: 0 10px; /* Add some padding around features */
+}
+
+/* Individual feature styling */
+.feature-item {
+  flex: 1 1 30%; /* Each item takes 30% of the row */
+  max-width: 300px; /* Limit the maximum width */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px); /* Slight hover effect */
+}
+
+/* Icon Styling */
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing,
+.holberton_school-icon-ic_video {
+  font-size: 4rem; /* Large icon size */
+  color: #ff6b6b; /* Custom color for icons */
+  margin-bottom: 20px;
+}
+
+/* Feature title styling */
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: capitalize; /* Make first letter uppercase */
+}
+
+/* Feature description text styling */
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+  .feature-item {
+    flex: 1 1 100%; /* Each feature takes full width on small screens */
+    margin-bottom: 20px; /* Add space between features */
   }
-  
-  .what-we-do-section {
-    text-align: center;
-    padding: 60px; /* added padding to the section */
-  }
-  
-  .what-we-do-section h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px; /* decreased margin to 20px */
-    color: #ff5b5b;
-  }
-  
-  .what-we-do-section p {
-    font-size: 18px;
-    color: #666666;
-    margin-bottom: 40px; /* decreased margin to 40px */
-  }
-  
-  .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -20px; /* added negative margin to the services container */
-  }
-  
-  .service-item {
-    flex-basis: 25%;
-    margin: 20px; /* decreased margin to 20px */
-    text-align: center;
-    padding: 20px; /* decreased padding to 20px */
-    border: 1px solid #ddd; /* added border to the service item */
-    border-radius: 10px; /* added border radius to the service item */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow to the service item */
-  }
-  
-  .service-item i {
-    font-size: 40px;
-    color: #ff5b5b;
-    margin-bottom: 20px; /* decreased margin to 20px */
-  }
-  
-  .service-item h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .service-item p {
-    font-size: 16px;
-    color: #666666;
-  }
+}
+
+
+ 
